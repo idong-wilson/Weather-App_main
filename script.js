@@ -38,10 +38,10 @@ let getWeather = () => {
         const tempMax = roundUp(data.main.temp_max);
         result.innerHTML = `
         <h2>${data.name}</h2>
-        <h4 class="weather">${data.weather[0].main}</h4>
         <h4 class="desc">${weatherDescription}</h4>
         <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png">
-        <h1>${temp} &#176;F</h1>
+        <h1>${temp}&#176;</h1>
+        <h4 class="weather">feels like: ${data.main.feels_like.toFixed()}°</h4>
         <div class="temp-container">
             <div>
                 <h4 class="title">min</h4>
