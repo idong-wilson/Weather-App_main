@@ -59,6 +59,7 @@ background-color: transparent;
 border-bottom: 2px solid var(--transp-white-1);
 color: var(--white);
 font-weight: 300;
+text-transform: capitalize;
 }
 .search-container input::placeholder {
 color: var(--off-white);
